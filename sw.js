@@ -1,4 +1,4 @@
-const C='practice-sql-pwa-v2.2-full-review';
+const C='practice-sql-pwa-v2.2.1-stacking-fix';
 const LOCAL=['./','index.html','style.css','app.js','enhancements.js','problems.json','manifest.webmanifest','icons/icon-192.png','icons/icon-512.png'];
 const CDN='https://cdn.jsdelivr.net/npm/sql.js@1.16.0/dist/sql-wasm-inline.js';
 self.addEventListener('install',event=>event.waitUntil(caches.open(C).then(cache=>cache.addAll([...LOCAL,CDN])).then(()=>self.skipWaiting())));
